@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>FIT2102 A1 2022</title>
+    <style> 
+      .car{
+        fill:red;
+      }
+      .plank{
+        fill:brown;
+      }
+      .destination{
+        fill:white;
+      }
+      .gameover {
+        font-family:sans-serif;
+        font-size:30px;
+        fill:red;
+      } 
+      .frog{
+        fill:yellow;
+      }
+      .flag{
+        fill:blue;
+      }
+      .river {
+        fill:lightblue;
+      }
+      .safeZone{
+        fill:green;
+      }
+      .key {
+      width:18px;
+      text-align:center;
+      border-radius:3px;
+      background-color:lightgray;
+      }
+      div#controls {
+      float: right;
+      margin: 50px;
+      
+  }
+    </style>
+  </head>
+  <body>
+    <h1>Frogger</h1>
+    <svg id="svgCanvas" width="600" height="600"></svg>
+    <svg id="scoreBoard" width="200" height="600" style="background-color:orange">
+      <g>
+      <text x="0" y="30">Score:</text>
+      <text id ="scoreTxt", x="50" y="30" >0:</text>
+      <text x="0" y="200">Highest Score:</text>
+      <text id ="highestScoreTxt",x="0" y="250">0:</text>
+      </g>
+    </svg>
+    <div id="controls">
+      <h2>Controls:</h2>
+      <table>
+          <tr><td>Move Left</td><td><div id="KeyA" class="key">&#65;</div></td></tr>
+          <tr><td>Move Right</td><td><div id="KeyD" class="key">&#68;</div></td></tr>
+          <tr><td>Move Up</td><td><div id="KeyW" class="key">&#87;</div></td></tr>
+          <tr><td>Move Down</td><td><div id="KeyS" class="key">&#83;</div></div></td></tr>
+          <tr><td>Restart Game</td><td><div id="Space" class="key" style="width:50px">Space</td></tr>
+          <tr><td>Rules:</td></tr>
+          <tr><td>Avoid red block and light blue area to avoid Game Over!</td></tr>
+          <tr><td>Green area is safe to rest</td></tr>
+          <tr><td>Brown block is safe to step on</td></tr>
+          <tr><td>Move towards white block to earn Score :)</td></tr>
+          <tr><td>Move towards same white block will earn 100 score but GameOver!!!</td></tr>
+      </table>
+      </div>
+  </body>
+</html>
